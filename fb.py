@@ -16,7 +16,7 @@ os.system('clear')
 
 print("                                   Edmark.net ")
 print("                              Facebook Bruteforce")
-print("                                  Version: V2")
+print("                                  Version: V3")
 print("                         Created by: Edmark Jay Sumampen")
 print
 
