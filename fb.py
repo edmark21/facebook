@@ -47,13 +47,13 @@ def main():
 	welcome()
 	search()
 	print("Password does not exist in the wordlist")
-	print ("\n\n\n\n   launch = launch the facebook bruteforce attack again")
-	print ("   quit = return in Fish cracker main menu")
+	print ("\n\n\n\n   launch = launch the facebook bruteforce attack again?")
+	print ("   quit = Exit")
 	t = raw_input("\n\n Select your choice " )
 	if t == "launch":
                 os.system("fb.py")
         elif t == "quit":
-                os.system("fc.py")
+                exit()
         else:
                 print (" Invalid Command")
                 exit()
@@ -96,7 +96,7 @@ def welcome():
 	total = total.readlines()
 	print
 	print (" [*] Account to crack : {}".format(email))
-	print (" [*] Loaded :" , len(total), "passwords")
+	print (" [*] Loaded :" , len(total), passwords)
 	print (" [*] Cracking, please wait ...\n\n")
 
 
