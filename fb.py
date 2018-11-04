@@ -47,16 +47,7 @@ def main():
 	welcome()
 	search()
 	print("Password does not exist in the wordlist")
-	print ("\n\n\n\n   launch = launch the facebook bruteforce attack again?")
-	print ("   quit = Exit")
-	t = raw_input("\n\n Select your choice " )
-	if t == "launch":
-                os.system("fb.py")
-        elif t == "quit":
-                exit()
-        else:
-                print (" Invalid Command")
-                exit()
+	
 	
 
 
