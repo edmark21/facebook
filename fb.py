@@ -47,6 +47,7 @@ def main():
 	welcome()
 	search()
 	print("Password does not exist in the wordlist")
+	exit()
 	
 	
 
