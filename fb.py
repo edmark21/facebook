@@ -37,8 +37,8 @@ import mechanize
 import cookielib
 import random
 os.system('clear')
-print ('Edmark.net')
-
+print ('shout out kay basmayor')
+time.sleep(2)
 os.system('clear')
 
 
