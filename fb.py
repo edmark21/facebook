@@ -45,15 +45,17 @@ os.system('clear')
 
 print("                                   Edmark.net ")
 print("                              Facebook Bruteforce")
-print("                                  Version: V4")
+print("                                  Version: V5")
 print("                         Created by: Edmark Jay Sumampen")
+
+
 print
 
 
 
 #email
 email = str(raw_input(cyan + "\n\nEmail or Phone: " + reset))
-wp = '/storage/emulated/0/wordlist.txt'
+wp = 'wordlist.txt'
 #wordlist
 passwordlist = str(raw_input(cyan + "WordListPath / Enter to Start: " + reset)) + wp
 
