@@ -37,7 +37,7 @@ import mechanize
 import cookielib
 import random
 os.system('clear')
-print ('shout out kay basmayor')
+print ('Hack the world')
 time.sleep(2)
 os.system('clear')
 
