@@ -1,8 +1,11 @@
 # facebook
-bruteforce attack tool v3
+bruteforce attack tool v5
 
 
 how to run?
+
+python2 pass.py
+(enters target's account info)
 
 python2 fb.py
 (now enter target's email/phone:)
