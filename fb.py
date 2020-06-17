@@ -55,7 +55,7 @@ print
 
 #email
 email = str(raw_input(cyan + "\n\nEmail or Phone: " + reset))
-wp = 'wordlist.txt'
+wp = 'password.txt'
 #wordlist
 passwordlist = str(raw_input(cyan + "WordListPath / Enter to Start: " + reset)) + wp
 
